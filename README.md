@@ -1,3 +1,8 @@
+#Project Description:
+
+In this Project we have created a Weather App using OpenWeather API
+and react-Icons for icons
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
