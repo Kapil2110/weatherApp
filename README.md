@@ -1,4 +1,4 @@
-#Project Description:
+# Project Description:
 
 In this Project we have created a Weather App using OpenWeather API
 and react-Icons for icons
