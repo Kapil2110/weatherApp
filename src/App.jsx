@@ -2,6 +2,8 @@ import axios from 'axios'
 import {useState } from 'react'
 import {WiCelsius, WiCloudy, WiDaySunnyOvercast, WiHumidity, WiRain, WiSnow, WiThermometerExterior} from 'react-icons/wi'
 import {BsCloudFog2Fill} from 'react-icons/bs'
+import {RiMistFill} from 'react-icons/ri'
+import { MdOutlineDehaze } from 'react-icons/md'
 import {FiWind} from 'react-icons/fi'
 
 function App() {
@@ -53,7 +55,7 @@ function App() {
         >
           <h1 
           className='flex justify-center font-bold text-2xl mt-2 border-x-4 border-slate-800'>
-          Weather App Kapil</h1>
+          Weather App </h1>
 
           {/* input div start */}
 
@@ -94,6 +96,12 @@ function App() {
                   }
                   if (data.status == 'Snow') {
                     return <h1 className='text-white font-bold text-8xl'>< WiSnow /></h1>
+                  }
+                  if (data.status == 'Mist') {
+                    return <h1 className='text-white font-bold text-8xl'>< RiMistFill /></h1>
+                  }
+                  if (data.status == 'Haze') {
+                    return <h1 className='text-white font-bold text-8xl'>< MdOutlineDehaze /></h1>
                   }
                 })()} 
                 <p className='text-sm text-white'>{data.status}</p>
