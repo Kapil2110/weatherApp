@@ -53,7 +53,7 @@ function App() {
         >
           <h1 
           className='flex justify-center font-bold text-2xl mt-2 border-x-4 border-slate-800'>
-          Weather App</h1>
+          Weather App Kapil</h1>
 
           {/* input div start */}
 
